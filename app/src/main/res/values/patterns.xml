@@ -1,0 +1,7 @@
+<resources>
+    <!--Hand in Hand Puzzle-->
+    <string name="pattern_across_a">(MA|NE)</string>
+    <string name="pattern_across_b">(TH|RD)</string>
+    <string name="pattern_down_a">[K-O]*</string>
+    <string name="pattern_down_b">[A-F]*</string>
+</resources>

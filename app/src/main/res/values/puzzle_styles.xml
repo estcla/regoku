@@ -1,0 +1,34 @@
+<resources>
+
+    <style name="pattern_style_font">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="pattern_style_across" parent="pattern_style_font">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+
+    <style name="pattern_style_down" parent="pattern_style_font">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:rotation">90</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="game_style_cell_block">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:background">@drawable/game_border</item>
+        <item name="android:inputType">textNoSuggestions</item>
+    </style>
+
+</resources>
