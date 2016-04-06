@@ -1,62 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
     tools:context="la.estc.regoku.GameActivity">
+
+    <TextView
+        style="@style/app_name_style_font"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name" />
+
+    <TextView
+        style="@style/puzzle_title_style_font"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_hand_in_hand" />
 
     <TableLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:padding="24dp">
 
         <TableRow>
-            <TextView
-                style="@style/pattern_style_down"/>
+
+            <TextView style="@style/pattern_style_down" />
 
             <TextView
                 style="@style/pattern_style_down"
-                android:text="@string/pattern_down_a"/>
+                android:text="@string/pattern_down_a" />
+
             <TextView
                 style="@style/pattern_style_down"
-                android:text="@string/pattern_down_b"/>
+                android:text="@string/pattern_down_b" />
         </TableRow>
 
         <TableRow>
+
             <TextView
                 style="@style/pattern_style_across"
-                android:text="@string/pattern_across_a"/>
+                android:text="@string/pattern_across_a" />
 
-            <EditText
-                style="@style/game_style_cell_block"
-                />
+            <EditText style="@style/game_style_cell_block" />
 
 
             <EditText
                 style="@style/game_style_cell_block"
-                android:layout_marginLeft="-2dp"
-                />
+                android:layout_marginLeft="-3dp" />
         </TableRow>
 
         <TableRow>
+
             <TextView
                 style="@style/pattern_style_across"
-                android:text="@string/pattern_across_b"/>
+                android:text="@string/pattern_across_b" />
 
             <EditText
                 style="@style/game_style_cell_block"
-                android:layout_marginTop="-2dp"
-                />
+                android:layout_marginTop="-3dp" />
 
             <EditText
                 style="@style/game_style_cell_block"
-                android:layout_marginTop="-2dp"
-                android:layout_marginLeft="-2dp"
-                />
+                android:layout_marginLeft="-3dp"
+                android:layout_marginTop="-3dp" />
 
         </TableRow>
 

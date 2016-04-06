@@ -1,5 +1,6 @@
 <resources>
     <!--Hand in Hand Puzzle-->
+    <string name="title_hand_in_hand">Hand in Hand</string>
     <string name="pattern_across_a">(MA|NE)</string>
     <string name="pattern_across_b">(TH|RD)</string>
     <string name="pattern_down_a">[K-O]*</string>

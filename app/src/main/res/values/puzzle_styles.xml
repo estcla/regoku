@@ -1,11 +1,35 @@
 <resources>
 
-    <style name="pattern_style_font">
-        <item name="android:textSize">24sp</item>
-        <item name="android:textColor">@color/colorPrimary</item>
-        <item name="android:typeface">sans</item>
+        <!--App Name - Regoku-->
+
+    <style name="app_name_style_font">
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:typeface">monospace</item>
         <item name="android:textStyle">bold</item>
     </style>
+    
+    <!--Name of the puzzle-->
+
+    <style name="puzzle_title_style_font">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <!--Base style shared by regex patterns in game-->
+
+    <style name="pattern_style_font">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Regex statements for rows (going across)-->
 
     <style name="pattern_style_across" parent="pattern_style_font">
         <item name="android:layout_width">wrap_content</item>
@@ -14,17 +38,21 @@
         <item name="android:layout_marginRight">8dp</item>
     </style>
 
+    <!--Regex statements for columns (going down)-->
+
     <style name="pattern_style_down" parent="pattern_style_font">
         <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">64dp</item>
+        <item name="android:layout_height">50dp</item>
         <item name="android:gravity">center</item>
-        <item name="android:rotation">90</item>
         <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:rotation">45</item>
     </style>
 
+    <!--EditText views where user inputs game answer-->
+
     <style name="game_style_cell_block">
-        <item name="android:layout_width">60dp</item>
-        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">68dp</item>
+        <item name="android:layout_height">68dp</item>
         <item name="android:gravity">center</item>
         <item name="android:maxLength">1</item>
         <item name="android:background">@drawable/game_border</item>
